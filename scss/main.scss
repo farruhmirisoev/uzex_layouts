@@ -1,0 +1,56 @@
+@import "../bower_components/susy/sass/susy";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import 'fonts';
+@import 'variables';
+@import 'mixin';
+@import "grids";
+@import 'reset';
+@import 'blocks/*';
+@import 'elements/*';
+ul,
+li,
+ul.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+i,
+div,
+html,
+body,
+ul,
+table,
+td,
+tr,
+tbody {
+    outline: none;
+    box-sizing: border-box;
+}
+
+tbody {
+    border: none;
+}
+
+a,
+input {
+    text-decoration: none;
+    outline: none !important;
+}
+
+html {
+    font-family: 'Roboto';
+}
+
+body {}
+
+form input[type='submit'] {
+    font-family: fontawesome;
+}

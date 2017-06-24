@@ -1,0 +1,253 @@
+body {
+    // display: none;
+}
+
+#goTop {}
+
+a {
+    cursor: pointer;
+}
+
+#page-title {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-family: "Roboto Thin";
+    font-weight: 100;
+    font-style: normal;
+    @include breakpoint(max-width 1024px) {
+        font-size: 30px;
+    }
+    @include breakpoint(max-width 768px) {
+        font-size: 26px;
+    }
+    @include breakpoint(max-width 600px) {
+        font-size: 24px;
+    }
+    @include breakpoint(max-width 500px) {
+        font-size: 20px;
+    }
+}
+
+.not-front {
+    #content {
+        margin-top: 2rem;
+        @include innerbox(0, 1);
+        @include clearfix;
+    }
+}
+
+.view-products-view {
+    .views-row {
+        @include gallery(3);
+        margin-bottom: 1rem;
+        @include breakpoint(max-width 1024px) {
+            @include gallery(4);
+        }
+        @include breakpoint(max-width 768px) {
+            @include gallery(6);
+        }
+        @include breakpoint(max-width 600px) {
+            @include cg {
+                @include span(full);
+            }
+        }
+        .views-field-title-field-et {
+            font-size: 16px;
+            color: #323232;
+            margin-bottom: 1rem;
+        }
+        .views-field-field-image {
+            div {
+                @include bg;
+                height: 250px;
+            }
+        }
+        .views-field-body-et {
+            margin-top: 1rem;
+            @include light;
+            font-size: 15px;
+        }
+        .views-field-view-node {
+            margin: 0.5rem 0;
+            text-align: center;
+            a {
+                color: #fff;
+                cursor: pointer;
+                font-size: 14px;
+                padding: 1rem 2rem;
+                font-family: 'Segoe UI Bold';
+                background: #032544;
+                text-transform: uppercase;
+                display: inline-block;
+                border: solid 1px #032544;
+                @include trans;
+                &:hover {
+                    color: #032544;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+.item-list {
+    ul {
+        li,
+        li a {
+            margin: 0;
+            padding: 0;
+            @include light;
+            font-size: 32px;
+            color: #323232;
+            vertical-align: middle;
+            line-height: normal;
+            display: inline-block;
+        }
+        .pager-current {}
+        .pager-ellipsis {
+            display: none;
+        }
+        .pager-next,
+        .pager-previous {
+            vertical-align: baseline;
+            a {
+                font-size: 4rem;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+#contact-site-form {
+    @include span(6);
+    @include breakpoint(max-width 768px) {
+        @include span(full);
+    }
+    label {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #323232;
+        margin-bottom: 0.5rem;
+        @include light;
+    }
+    .description {
+        margin: 0.5rem 0;
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1rem;
+        padding: 3px;
+        color: #323232;
+        border: solid 1px #323232;
+    }
+    .form-submit {
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 1rem 2rem;
+        font-family: 'Segoe UI Bold';
+        background: #032544;
+        text-transform: uppercase;
+        display: inline-block;
+        border: solid 1px #032544;
+        @include trans;
+        &:hover {
+            color: #032544;
+            background: #fff;
+        }
+    }
+}
+
+.view-news-view.view-display-id-page_1 {
+    .views-row {
+        @include gallery(4);
+        font-size: 18px;
+        border-bottom: 1px solid #dbdbdb;
+        margin-bottom: 1rem;
+        .views-field-title-field-et {
+            margin-top: 1rem;
+            a {
+                font-size: 18px;
+                color: #323232;
+            }
+        }
+        .views-field-created {
+            margin-top: 2rem;
+            font-size: 16px;
+            .field-content {
+                text-transform: uppercase;
+                color: #38a175;
+                margin-bottom: 1rem;
+                display: inline-block;
+            }
+        }
+        .views-field-field-image {
+            div {
+                @include bg;
+                height: 250px;
+            }
+        }
+    }
+}
+
+.node-type-products,
+.node-type-news {
+    .field-name-field-image {
+        width: 50%;
+        float: left;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        div {
+            @include bg;
+            height: 400px;
+        }
+    }
+    .field-name-body {
+        font-size: 1rem;
+        @include light;
+        margin-bottom: 1rem;
+        p {
+            margin: 0.5rem 0;
+        }
+        strong {
+            @include bold;
+        }
+    }
+    @include breakpoint(max-width 768px) {
+        .field-name-field-image {
+            width: 100%;
+            margin-bottom: 0;
+            .field-items {
+                width: 60%;
+                margin: 0 auto;
+                div {
+                    height: 350px;
+                }
+            }
+        }
+    }
+    @include breakpoint(max-width 650px) {
+        .field-name-field-image {
+            .field-items {
+                width: 80%;
+                div {
+                    height: 300px;
+                }
+            }
+        }
+    }
+    @include breakpoint(max-width 450px) {
+        .field-name-field-image {
+            .field-items {
+                width: 100%;
+                div {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
