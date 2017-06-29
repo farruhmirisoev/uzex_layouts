@@ -18,43 +18,50 @@
 </head>
 
 <body>
-    <i class="fa fa-search" aria-hidden="true"></i>
+    <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
     <header>
         <div id="header-top">
             <div class="user-actions">
                 <ul>
-                    <li><a href="#">Войти</a></li>
-                    <li><a href="#">Регистрация</a></li>
+                    <li class="login"><a href="#">Войти</a></li>
+                    <li class="register"><a href="#">Регистрация</a></li>
                 </ul>
             </div>
         </div>
         <div id="header-bottom">
-            <div class="logo">
-                <img src="images/EX-CHANGE.png">
-            </div>
-            <div class="search">
-                <form>
-                    <input type="text" name="name" placeholder="поиск...">
-                    <input type="submit" value="\xEF\x80\x82">
-                </form>
+            <div class="header-wrap">
+                <div class="logo">
+                    <img src="images/EX-CHANGE.png">
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="text" name="name" placeholder="поиск...">
+                        <input type="submit" value="&#xf002;">
+                    </form>
+                </div>
             </div>
         </div>
     </header>
     <div class="banner" style="background-image:url(images/banner.png)">
         <div class="banner__content">
             <div class="login-box">
-                <div class="login-text"></div>
+                <div class="login-text">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                </div>
                 <div class="login-btn">
-                    <a href="">Войти</a>
-                    <a href="">Регистрация</a>
+                    <a class="banner-login" href="">Войти</a>
+                    <a class="banner-register" href="">Регистрация</a>
                 </div>
             </div>
             <div class="intro-video">
+                <video controls="" poster="/images/poster.png">
+                    <source src="video/iv.mp4" type="video/webm"> Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
     <div class="main-menu">
-        <ul class="menu">
+        <ul class="main-menu__listwrap">
             <li><a href="#">О проекте</a></li>
             <li><a href="#">Партнерам</a></li>
             <li><a href="#">Вакансии</a></li>
@@ -63,184 +70,362 @@
         </ul>
     </div>
     <div id="content">
-        <div class="our-products">
-            <h2 class="block-title">Наши продукты</h2>
-            <div class="our-products__content">
-                <div class="our-products__desc">
-                    <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker</p>
+        <div class="container">
+            <div class="our-products wshadow">
+                <div class="block-title__block_1">
+                    <h2 class="block-title">Наши продукты</h2>
                 </div>
-                <div class="our-products__types">
-                    <div class="our-products__type our-products__type-1">
-                        <div class="our-products__type__img"></div>
-                        <div class="our-products__type__title">Курсы</div>
-                        <div class="our-products__type__date">Последнее добавление: 23.05.2017</div>
+                <div class="our-products__content">
+                    <div class="our-products__desc">
+                        <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker</p>
                     </div>
-                    <div class="our-products__type our-products__type-2">
-                        <div class="our-products__type__img"></div>
-                        <div class="our-products__type__titlee">Тесты</div>
-                        <div class="our-products__type__date">Последнее добавление: 22.05.2017</div>
-                    </div>
-                    <div class="our-products__type our-products__type-3">
-                        <div class="our-products__type__img"></div>
-                        <div class="our-products__type__title">Библиотека</div>
-                        <div class="our-products__type__date">Последнее добавление: 19.05.2017</div>
-                    </div>
-                </div>
-            </div>
-            <div class="our-products__all">
-                <a href="">>> Смотреть весь каталог</a>
-            </div>
-        </div>
-        <div class="stats">
-            <h2 class="block-title">Статистика</h2>
-            <div class="stats__content">
-                <div class="stats__item">
-                    <div class="stats__numbers">31,466</div>
-                    <div class="stats__title">всего просмотров за последний месяц</div>
-                </div>
-                <div class="stats__item stats__item_right">
-                    <div class="stats__numbers">3466</div>
-                    <div class="stats__title">всего просмотров за последний месяц</div>
-                </div>
-                <div class="stats__item">
-                    <div class="stats__numbers">466</div>
-                    <div class="stats__title">всего просмотров за последний месяц</div>
-                </div>
-            </div>
-        </div>
-        <div class="comment-box">
-            <h3 class="block-title">Мнения пользователей</h3>
-            <div class="rating">
-                <div class="rating__types">
-                    <div class="rating__types rating__type-1">
-                        <p>Курсы</p>
-                    </div>
-                    <div class="rating__types rating__type-2">
-                        <p>Тесты</p>
-                    </div>
-                </div>
-                <div class="user-ratings">
-                    <div class="user-ratings__rate-1">
-                        <span>5</span>
-                    </div>
-                    <div class="user-ratings__rate-2">
-                        <span>4</span>
-                    </div>
-                    <div class="user-ratings__rate-3">
-                        <span>3</span>
-                    </div>
-                    <div class="user-ratings__rate-4">
-                        <span>2</span>
-                    </div>
-                    <div class="user-ratings__rate-5">
-                        <span>1</span>
-                    </div>
-                </div>
-            </div>
-            <div class="comments">
-                <h2 class="block-title">Лучшие комментарии</h2>
-                <div class="comments-content">
-                    <div class="comments-content comments-content__block-1">
-                        <div class="user-profile">
-                            <div class="photo">
+                    <div class="our-products__types">
+                        <div class="our-products__type our-products__type-1 ">
+                            <div class="our-products__type__img"><img src="images/product1.png"></div>
+                            <div class="our-products__type__title">
+                                <p>Курсы</p>
                             </div>
-                            <div class="user-block">
-                                <p>Phil Jones</p>
-                                <span>27.03.2017</span>
-                                <div class="rating-five__star"></div>
-                                <div class="user-desc"></div>
+                            <div class="our-products__type__date">
+                                <p>Последнее добавление: 23.05.2017</p>
+                            </div>
+                        </div>
+                        <div class="our-products__type our-products__type-2">
+                            <div class="our-products__type__img"><img src="images/prod2.png"></div>
+                            <div class="our-products__type__title title__test">
+                                <p>Тесты</p>
+                            </div>
+                            <div class="our-products__type__date">
+                                <p>Последнее добавление: 22.05.2017</p>
+                            </div>
+                        </div>
+                        <div class="our-products__type our-products__type-3">
+                            <div class="our-products__type__img"><img src="images/prod3.png"></div>
+                            <div class="our-products__type__title title__library">
+                                <p>Библиотека</p>
+                            </div>
+                            <div class="our-products__type__date">
+                                <p>Последнее добавление: 19.05.2017</p>
                             </div>
                         </div>
                     </div>
-                    <div class="comments-content comments-content__block-2">
-                        <div class="user-profile">
-                            <div class="photo">
+                </div>
+                <div class="our-products__all">
+                    <a href="">Смотреть весь каталог</a>
+                </div>
+            </div>
+            <div class="figures-block">
+                <div class="stats">
+                    <div class="block-title__block_3">
+                        <h2 class="block-title">Статистика</h2>
+                    </div>
+                    <div class="stats__content">
+                        <div class="stats__item">
+                            <div class="stats__numbers">
+                                <p>31,466</p>
                             </div>
-                            <div class="user-block">
-                                <p>Phil Jagiel</p>
-                                <span>12.02.2017</span>
-                                <div class="rating-five__star"></div>
-                                <div class="user-desc"></div>
+                            <div class="stats__title">
+                                <p>всего просмотров за последний месяц</p>
                             </div>
                         </div>
-                        <div class="readmore">
-                            <a href="">Read more</a>
+                        <div class="stats__item stats__item_right">
+                            <div class="stats__numbers">
+                                <p>20,998</p>
+                            </div>
+                            <div class="stats__title">
+                                <p>всего пройденных тестов за последний месяц
+                                </p>
+                            </div>
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__numbers">
+                                <p>715</p>
+                            </div>
+                            <div class="stats__title">
+                                <p>сейчас проходят курс</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="user-comments__footer">
-                    <div class="user-comment__leave">
-                        <a href="">Оставить комментарий</a>
+                <div class="comment-box">
+                    <h3 class="block-title">Мнения пользователей</h3>
+                    <div class="comment-box__content">
+                        <div class="rating">
+                            <div class="rating__types">
+                                <div class="rating__type active">
+                                    <p>Курсы</p>
+                                </div>
+                                <div class="rating__type">
+                                    <p>Тесты</p>
+                                </div>
+                            </div>
+                            <div class="user-ratings">
+                                <div class="user-ratings__rate user-ratings__rate-1">
+                                    <span>5</span>
+                                    <div class="user-ratings__bar"></div>
+                                    <p>26</p>
+                                </div>
+                                <div class="user-ratings__rate user-ratings__rate-2">
+                                    <span>4</span>
+                                    <div class="user-ratings__bar"></div>
+                                    <p>20</p>
+                                </div>
+                                <div class="user-ratings__rate user-ratings__rate-3">
+                                    <span>3</span>
+                                    <div class="user-ratings__bar"></div>
+                                    <p>15</p>
+                                </div>
+                                <div class="user-ratings__rate user-ratings__rate-4">
+                                    <span>2</span>
+                                    <div class="user-ratings__bar"></div>
+                                    <p>5</p>
+                                </div>
+                                <div class="user-ratings__rate user-ratings__rate-5">
+                                    <span>1</span>
+                                    <div class="user-ratings__bar"></div>
+                                    <p>2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="block-title__block_2">
+                                <h2 class="block-title">Лучшие комментарии</h2>
+                            </div>
+                            <div class="comments__content">
+                                <div class="comments__item comments__item-1">
+                                    <div class="user-profile">
+                                        <div class="user-photo"><img src="images/default_user.png">
+                                        </div>
+                                        <div class="user-block">
+                                            <p>Имя, Фамилия</p>
+                                            <div class="user-comment__date"><span>27.03.2017</span></div>
+                                            <div class="rating-five__star">
+                                                <input type="radio" id="star5" name="rating" value="5" />
+                                                <label for="star5" title="">5 stars</label>
+                                                <input type="radio" id="star4" name="rating" value="4" />
+                                                <label for="star4" title="">4 stars</label>
+                                                <input type="radio" id="star3" name="rating" value="3" />
+                                                <label for="star3" title="">3 stars</label>
+                                                <input type="radio" id="star2" name="rating" value="2" />
+                                                <label for="star2" title="">2 stars</label>
+                                                <input type="radio" id="star1" name="rating" value="1" />
+                                                <label for="star1" title="">1 star</label>
+                                            </div>
+                                            <div class="user-desc">
+                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments__item comments__item-2">
+                                    <div class="user-profile">
+                                        <div class="user-photo"><img src="images/default_user.png">
+                                        </div>
+                                        <div class="user-block">
+                                            <p>Имя, Фамилия</p>
+                                            <div class="user-comment__date"><span>12.02.2017</span></div>
+                                            <div class="rating-five__star">
+                                                <input type="radio" id="star5" name="rating" value="5" />
+                                                <label for="star5" title="">5 stars</label>
+                                                <input type="radio" id="star4" name="rating" value="4" />
+                                                <label for="star4" title="">4 stars</label>
+                                                <input type="radio" id="star3" name="rating" value="3" />
+                                                <label for="star3" title="">3 stars</label>
+                                                <input type="radio" id="star2" name="rating" value="2" />
+                                                <label for="star2" title="">2 stars</label>
+                                                <input type="radio" id="star1" name="rating" value="1" />
+                                                <label for="star1" title="">1 star</label>
+                                            </div>
+                                            <div class="user-desc">
+                                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="readmore">
+                                        <a href="">Читать дальше</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-comment__footer">
+                                <div class="user-comment__leave">
+                                    <form>
+                                        <input type="submit" value="Оставить комментарий">
+                                    </form>
+                                </div>
+                                <div class="user-comment__all">
+                                    <a href="">Смотреть все комментарии</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="user-comment__all">
-                        <a href="">>>Смотреть все комментарии</a>
+                </div>
+            </div>
+            <div class="latest-news wshadow slick__slider">
+                <div class="block-title__block_3">
+                    <h2 class="block-title">Последние новости</h2>
+                </div>
+                <div class="latest-news__content">
+                    <div class="latest-news__item latest-news__news-1">
+                        <div class="latest-news__intro">
+                            <div class="latest-news__image"><img src="images/news1.png"></div>
+                            <div class="latest-news__title">
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне</p>
+                            </div>
+                        </div>
+                        <div class="latest-news__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolorem placeat tempora in vero tempore nam odio fugiat similique, eum, saepe quia ducimus est velit laboriosam officiis delectus reiciendis tenetur!</p>
+                        </div>
+                        <div class="latest-news__more">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="latest-news__item latest-news__news-2">
+                        <div class="latest-news__intro">
+                            <div class="latest-news__image"><img src="images/news1.png"></div>
+                            <div class="latest-news__title">
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне</p>
+                            </div>
+                        </div>
+                        <div class="latest-news__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloremque impedit laudantium magnam eos, quae ipsum rem dolorum, saepe laboriosam ipsam, nobis architecto, debitis vel aut provident</p>
+                        </div>
+                        <div class="latest-news__more">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="latest-news__item latest-news__news-3">
+                        <div class="latest-news__intro">
+                            <div class="latest-news__image"><img src="images/news1.png"></div>
+                            <div class="latest-news__title">
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне</p>
+                            </div>
+                        </div>
+                        <div class="latest-news__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloremque impedit laudantium magnam eos, quae ipsum rem dolorum, saepe laboriosam ipsam, nobis architecto, debitis vel aut provident </p>
+                        </div>
+                        <div class="latest-news__more">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="latest-news__item latest-news__news-4">
+                        <div class="latest-news__intro">
+                            <div class="latest-news__image"><img src="images/news1.png"></div>
+                            <div class="latest-news__title">
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне</p>
+                            </div>
+                        </div>
+                        <div class="latest-news__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloremque impedit laudantium magnam eos, quae ipsum rem dolorum, saepe laboriosam ipsam, nobis architecto, debitis vel aut provident </p>
+                        </div>
+                        <div class="latest-news__more">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="latest-news__item latest-news__news-5">
+                        <div class="latest-news__intro">
+                            <div class="latest-news__image"><img src="images/news1.png"></div>
+                            <div class="latest-news__title">
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне</p>
+                            </div>
+                        </div>
+                        <div class="latest-news__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloremque impedit laudantium magnam eos, quae ipsum rem dolorum, saepe laboriosam ipsam, nobis architecto, debitis vel aut provident</p>
+                        </div>
+                        <div class="latest-news__more">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spec-opinion wshadow slick__slider">
+                <div class="block-title__block_3">
+                    <h2 class="block-title">Мнения специалистов</h2>
+                </div>
+                <div class="spec-opinion__content">
+                    <div class="spec-opinion__user spec-opinion__user-1">
+                        <div class="spec-opinion__container">
+                            <div class="spec-user__profile">
+                                <div class="spec-user__image"><img src="images/spec1.png"></div>
+                                <div class="spec-user__name">
+                                    <p>Имя, Фамилия</p>
+                                </div>
+                                <div class="spec-user__post">
+                                    <p>Должность Достижения</p>
+                                </div>
+                            </div>
+                            <div class="spec-user__desc">
+                                <p>“Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.”</p>
+                                <p>В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                                <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-opinion__user spec-opinion__user-2">
+                        <div class="spec-opinion__container">
+                            <div class="spec-user__profile">
+                                <div class="spec-user__image"><img src="images/spec1.png"></div>
+                                <div class="spec-user__name">
+                                    <p>Имя, Фамилия</p>
+                                </div>
+                                <div class="spec-user__post">
+                                    <p>Должность Достижения</p>
+                                </div>
+                            </div>
+                            <div class="spec-user__desc">
+                                <p>“Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.”</p>
+                                <p>В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                                <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-opinion__user spec-opinion__user-3">
+                        <div class="spec-opinion__container">
+                            <div class="spec-user__profile">
+                                <div class="spec-user__image"><img src="images/spec1.png"></div>
+                                <div class="spec-user__name">
+                                    <p>Имя, Фамилия</p>
+                                </div>
+                                <div class="spec-user__post">
+                                    <p>Должность Достижения</p>
+                                </div>
+                            </div>
+                            <div class="spec-user__desc">
+                                <p>“Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.”</p>
+                                <p>В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                                <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.”</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="latest-news">
-            <h2 class="block-title">Latest news</h2>
-            <div class="latest-news news-1">
-                <div class="news-intro">
-                    <div class="news-image"></div>
-                    <div class="news-title">Lorem ipsum dolor sit amet.</div>
-                </div>
-                <div class="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolorem placeat tempora in vero tempore nam odio fugiat similique, eum, saepe quia ducimus est velit laboriosam officiis delectus reiciendis tenetur!</div>
-                <div class="news-more">
-                    <p>see more</p>
-                </div>
+        <div class="our-partners slick__slider">
+            <div class="block-title__block_3">
+                <h2 class="block-title">Наши партнеры</h2>
             </div>
-            <div class="latest-news news-2">
-                <div class="news-intro">
-                    <div class="news-image"></div>
-                    <div class="news-title">Lorem ipsum dolor sit amet.</div>
-                </div>
-                <div class="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloremque impedit laudantium magnam eos, quae ipsum rem dolorum, saepe laboriosam ipsam, nobis architecto, debitis vel aut provident tenetur perferendis aliquid.</div>
-                <div class="news-more">
-                    <p>see more</p>
-                </div>
-            </div>
-        </div>
-        <div class="specialists-opinions">
-            <h2 class="block-title"></h2>
-            <div class="spec-opinion spec-1">
-                <div class="spec-profile">
-                    <div class="spec-image"></div>
-                    <div class="spec-name">Lorem Loremov</div>
-                    <div class="spec-post">CEO</div>
-                </div>
-                <div class="spec-desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus enim dolor, eos id porro, amet culpa alias sunt reprehenderit necessitatibus deserunt eum. Sunt quia accusamus facilis quo cum, maiores nam?</p>
-                </div>
-            </div>
-            <div class="spec-opinion spec-2">
-                <div class="spec-profile">
-                    <div class="spec-image"></div>
-                    <div class="spec-name">Ipsum Dolor</div>
-                    <div class="spec-post">Director</div>
-                </div>
-                <div class="spec-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nemo similique, quidem nam vel quod voluptate debitis? Nobis est rerum sequi corporis necessitatibus ex dignissimos doloribus, quos atque, incidunt placeat.
-                </div>
-            </div>
-        </div>
-        <div class="our-partners">
-            <h2 class="block-title">Our partners</h2>
             <div class="our-partners__content">
-                <div class="our-partners__content partner-1">
-                    <img src="">
+                <div class="our-partners__item our-partners__item-1">
+                    <img src="images/p1.png">
                 </div>
-                <div class="our-partners__content partner-2">
-                    <img src="">
+                <div class="our-partners__item our-partners__item-2">
+                    <img src="images/p2.png">
                 </div>
-                <div class="our-partners__content partner-3">
-                    <img src="">
+                <div class="our-partners__item our-partners__item-3">
+                    <img src="images/p3.png">
                 </div>
-                <div class="our-partners__content partner-4">
-                    <img src="">
+                <div class="our-partners__item our-partners__item-4">
+                    <img src="images/p4.png">
                 </div>
-                <div class="our-partners__content partner-5">
-                    <img src="">
+                <div class="our-partners__item our-partners__item-5">
+                    <img src="images/p5.png">
+                </div>
+                <div class="our-partners__item our-partners__item-6">
+                    <img src="images/p3.png">
+                </div>
+                <div class="our-partners__item our-partners__item-7">
+                    <img src="images/p4.png">
+                </div>
+                <div class="our-partners__item our-partners__item-8">
+                    <img src="images/p5.png">
                 </div>
             </div>
         </div>
