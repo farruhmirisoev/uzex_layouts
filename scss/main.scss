@@ -338,6 +338,7 @@ form input[type='submit'] {
                             font-size: 18px;
                             color: white;
                             background: linear-gradient(to top, #0d5050, #147979);
+                            cursor: pointer;
                         }
                         &.active {
                             p {
@@ -377,7 +378,7 @@ form input[type='submit'] {
                 padding-top: 0.6rem;
                 font-size: 0;
             }
-            span {
+            &__star {
                 vertical-align: middle;
                 display: inline-block;
                 padding: 0.07rem 0;
@@ -395,11 +396,12 @@ form input[type='submit'] {
                     padding-bottom: 2px;
                 }
             }
-            p {
+            &__point {
                 display: inline-block;
                 font-size: 18px;
                 vertical-align: middle;
                 padding-left: 0.5rem;
+
             }
             &__bar {
                 display: inline-block;
@@ -678,6 +680,7 @@ form input[type='submit'] {
                 background: #028a8a;
                 img {
                     border-radius: 100%;
+                    width: 100%;
                 }
                 .spec-user__name {
                     text-align: center;
