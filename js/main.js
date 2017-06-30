@@ -1,7 +1,7 @@
 (function($) {
 
     $(document).ready(function() {
-        jQuery.scrollSpeed(100, 800);
+        // jQuery.scrollSpeed(100, 800);
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
                 if ($('#goTop').css('display') == 'none') {

@@ -59,6 +59,9 @@ form input[type='submit'] {
     ul {
         float: right;
         margin-right: 12em;
+        @include breakpoint (max-width 1024px) {
+            margin-right: 0;
+        }
         li {
             display: inline-block;
             margin: 14px 0;
@@ -104,7 +107,8 @@ form input[type='submit'] {
                     padding: 7px 10px;
                     box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
                     border: 0;
-                    width: 300px;
+                    width: 100%;
+                    box-sizing: border-box;
                 }
                 input[type="submit"] {
                     font-family: fontawesome;
@@ -170,9 +174,9 @@ form input[type='submit'] {
     .container {
         @include innerbox (0, 1);
         @include clearfix;
+        overflow: hidden;
     }
     .our-products {
-        // @include innerbox (0, 1);
         .our-products__desc p {
             display: inline-block;
             font-size: 18px;
@@ -184,7 +188,6 @@ form input[type='submit'] {
             background: #fff;
             box-shadow: 0px 0px 10px 0px rgba(112, 112, 112, 0.75);
             width: auto;
-            // padding: 0 58px;
             .our-products__type__img {
                 text-align: center;
                 img {
@@ -220,6 +223,7 @@ form input[type='submit'] {
                     font-size: 12px;
                     color: #7f7f7f;
                     padding-bottom: 0.5em;
+                    padding-right: 1em;
                 }
             }
         }
@@ -249,10 +253,13 @@ form input[type='submit'] {
     .figures-block {
         @include clearfix;
         .stats {
-            padding: 1.2rem 3rem 3.7rem;
+            padding: 1.2rem 3rem 2.7rem;
             background: #fff;
             box-shadow: 0px 0px 10px 0px rgba(112, 112, 112, 0.75);
             box-sizing: border-box;
+            @include breakpoint (max-width 1024px) {
+                padding: 1.2rem 3rem 4.2rem;
+            }
             @include span(6);
             .stats__content {
                 .stats__item {
@@ -307,6 +314,9 @@ form input[type='submit'] {
                     top: 50%;
                     right: -65%;
                     color: #2c6c6c;
+                    @include breakpoint (max-width 1024px) {
+                        display: none;
+                    }
                 }
                 .stats__item_right .stats__numbers:after {
                     left: -55%;
@@ -401,7 +411,6 @@ form input[type='submit'] {
                 font-size: 18px;
                 vertical-align: middle;
                 padding-left: 0.5rem;
-
             }
             &__bar {
                 display: inline-block;
@@ -573,7 +582,7 @@ form input[type='submit'] {
         }
         .user-comment__footer {
             margin: 0 1rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.5rem;
             form {
                 float: left;
             }
@@ -601,6 +610,7 @@ form input[type='submit'] {
                         width: 16em;
                         font-size: 14px;
                         color: #5d5e5e;
+                        cursor: pointer;
                     }
                 }
             }
@@ -616,8 +626,12 @@ form input[type='submit'] {
             .latest-news__intro {
                 .latest-news__image {
                     display: inline-block;
-                    img {
-                        float: left;
+                    @include breakpoint (max-width 1024px) {
+                      display: block;
+                      text-align: center;
+                      img {
+                        display: inline;
+                      }
                     }
                 }
                 .latest-news__title {
@@ -628,7 +642,11 @@ form input[type='submit'] {
                         width: 250px;
                         font-size: 18px;
                         color: #017979;
+                        @include breakpoint (max-width 1024px) {
+                          width: auto;
+                        }
                     }
+                    padding: 0.5em;
                 }
             }
             .latest-news__desc {
@@ -639,7 +657,11 @@ form input[type='submit'] {
                     padding: 1em 0;
                     padding-right: 2.5em;
                     color: #666666;
+                     @include breakpoint (max-width 1024px) {
+                      text-align: center;
+                     }
                 }
+
             }
             .latest-news__more {
                 text-align: right;
@@ -666,10 +688,11 @@ form input[type='submit'] {
             height: 87%;
             box-shadow: 0 0 7px 0 #000;
             padding-bottom: 0;
-            padding-left: 3px;
+            padding-left: 6px;
+            width: 25px;
         }
         &__container {
-            margin: 1.5em;
+            margin: 1.5em 3em;
             box-shadow: 0 0 10px 0 rgba(112, 112, 112, .75);
             overflow: hidden;
         }
@@ -678,6 +701,7 @@ form input[type='submit'] {
                 @include span(4);
                 padding: 1em;
                 background: #028a8a;
+                padding-bottom: 4.9em;
                 img {
                     border-radius: 100%;
                     width: 100%;
@@ -701,7 +725,7 @@ form input[type='submit'] {
             }
             .spec-user__desc {
                 @include span (8 last);
-                padding: 0.5em 0;
+                // padding: 1.5em 0;
                 p {
                     font-size: 14px;
                     color: #595959;
@@ -713,6 +737,7 @@ form input[type='submit'] {
     .our-partners {
         background: #fff;
         box-shadow: 0px 0px 10px 0px rgba(112, 112, 112, 0.75);
+        overflow: hidden;
         .our-partners__content {
             @include innerbox (0,
             1);
@@ -731,10 +756,10 @@ form input[type='submit'] {
         padding-bottom: 6rem;
     }
     .slick-next {
-        right: -0.5rem !important;
+        right: 0rem !important;
     }
     .slick-prev {
-        left: -0.5rem !important;
+        left: 0rem !important;
     }
     .slick-prev:after,
     .slick-next:after {
@@ -755,6 +780,6 @@ form input[type='submit'] {
     padding: 1rem;
     background: #fff;
     box-shadow: 0px 0px 10px 0px rgba(112, 112, 112, 0.75);
-    margin: 2em 0;
+    margin: 1.5em 0;
     box-sizing: border-box;
 }

@@ -42,8 +42,7 @@ gulp.task('sass', function() {
         .pipe(bs.reload({ stream: true }));
 })
 
-gulp.task('default', ['sass', 'scripts'], function() {
+gulp.task('default', ['sass'], function() {
     bs.init({ proxy: "uzex.d", ghostMode: false });
     gulp.watch('./scss/{,*/}*.{scss,sass}', ['sass']);
-    gulp.watch(["./js/*.js", "!./js/scripts.js"], ['scripts']);
 });
