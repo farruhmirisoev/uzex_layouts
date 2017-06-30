@@ -23,25 +23,24 @@
         <div id="header-top">
             <div class="user-actions">
                 <ul>
-                    <li class="login"><a href="#">Войти</a></li>
+                    <li>
+                        <span>Войти</span></li>
                     <li class="register"><a href="#">Регистрация</a></li>
                 </ul>
             </div>
         </div>
-        <div id="header-bottom">
-            <div class="header-wrap">
-                <div class="logo">
-                    <img src="images/EX-CHANGE.png">
-                </div>
-                <div class="search">
-                    <form>
-                        <input type="text" name="name" placeholder="поиск...">
-                        <input type="submit" value="&#xf002;">
-                    </form>
-                </div>
-            </div>
-        </div>
     </header>
+    <div class="header-bottom cf">
+        <div class="header__container">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <form class="search">
+                <input type="text" placeholder="Поиск...">
+                <input type="submit" value="&#xf002;">
+            </form>
+        </div>
+    </div>
     <div class="banner" style="background-image:url(images/banner.png)">
         <div class="banner__content">
             <div class="login-box">
@@ -178,11 +177,13 @@
                                     <div class="user-ratings__rate user-ratings__rate-4">
                                         <div class="user-ratings__star">2</div>
                                         <div class="user-ratings__bar"></div>
-                                        <div class="user-ratings__point">5</div>                                    </div>
+                                        <div class="user-ratings__point">5</div>
+                                    </div>
                                     <div class="user-ratings__rate user-ratings__rate-5">
                                         <div class="user-ratings__star">1</div>
                                         <div class="user-ratings__bar"></div>
-                                        <div class="user-ratings__point">2</div>                                    </div>
+                                        <div class="user-ratings__point">2</div>
+                                    </div>
                                 </div>
                                 <div class="user-ratings rating__type_id-2">
                                     <div class="user-ratings__rate user-ratings__rate-2">
@@ -198,11 +199,13 @@
                                     <div class="user-ratings__rate user-ratings__rate-4">
                                         <div class="user-ratings__star">3</div>
                                         <div class="user-ratings__bar"></div>
-                                        <div class="user-ratings__point">15</div>                                    </div>
+                                        <div class="user-ratings__point">15</div>
+                                    </div>
                                     <div class="user-ratings__rate user-ratings__rate-5">
                                         <div class="user-ratings__star">2</div>
                                         <div class="user-ratings__bar"></div>
-                                        <div class="user-ratings__point">5</div>                                    </div>
+                                        <div class="user-ratings__point">5</div>
+                                    </div>
                                     <div class="user-ratings__rate user-ratings__rate-1">
                                         <div class="user-ratings__star">1</div>
                                         <div class="user-ratings__bar"></div>
@@ -455,6 +458,101 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__top__catalog">
+                <h3 class="footer__block-title">Каталог</h3>
+                <ul>
+                    <li>
+                        <a href="#">Курсы</a>
+                    </li>
+                    <li>
+                        <a href="#">Тесты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top__library">
+                <h3 class="footer__block-title">Библиотека</h3>
+                <ul>
+                    <li>
+                        <a href="#">Биржевая платформа</a>
+                    </li>
+                    <li>
+                        <a href="#">Электронаая коммерция</a>
+                    </li>
+                    <li>
+                        <a href="#">Гос. закупки</a>
+                    </li>
+                    <li>
+                        <a href="#">Кор. закупки</a>
+                    </li>
+                    <li>
+                        <a href="#">Другие материалы</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top__contacts">
+                <h3 class="footer__block-title">Контакты</h3>
+                <div class="footer__top__contacts__address">
+                    <p>
+                        Адрес:
+                    </p>
+                    <span>
+                    100090, Ташкент, улица Бобура, дом 77 (ориентир - РОВД Яккасарайского района города Ташкента)
+                    </span>
+                </div>
+                <div class="footer__top__contacts__phone">
+                    <p>
+                        Телефон:
+                    </p>
+                    <span>
+                    + (998 90) 900 90 90 
+                    <br>
+                    + (998 71) 200 20 20
+                    </span>
+                </div>
+            </div>
+            <div class="footer__top__socials">
+                <h3 class="footer__block-title">Мы в сой. сетях</h3>
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <p>twitter.com/bilimuzex</p>
+                </a>
+                <a href="#">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                    <p>vk.com/bilimuzex</p>
+                </a>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <p>facebook.com/bilimuzex</p>
+                </a>
+                <a href="#">
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                    <p>telegram.org/bilimuzex</p>
+                </a>
+            </div>
+        </div>
+        <div class="footer__bottom"></div>
+    </footer>
+    <section class="login">
+        <div class="login__box">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <form>
+                <div class="block-title__block_3">
+                    <h2 class="block-title" style="color: #fff;">Вход</h2>
+                </div>
+                <div class="form-item">
+                    <label>Введите ваш логин</label>
+                    <input type="text" name="login">
+                </div>
+                <div class="form-item">
+                    <label>Введите ваш пароль</label>
+                    <input type="password" name="password">
+                </div>
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>
