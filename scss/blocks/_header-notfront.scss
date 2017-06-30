@@ -1,0 +1,115 @@
+.header {
+    background: linear-gradient(#016a6a, #002a2a);
+    text-align: right;
+    &__container {
+        @include innerbox(0, 1);
+    }
+    &_navmenu {
+        display: inline-block;
+        margin-right: 170px;
+        li {
+            @include breakpoint(769px) {
+                display: inline-block !important;
+            }
+            border-left: 1px solid #336666;
+            vertical-align: middle;
+            padding: 5px 10px;
+            a {
+                color: #fff;
+                padding: 10px 20px;
+                cursor: pointer;
+                display: inline-block;
+                border-radius: 10px;
+                &:hover,
+                &.active {
+                    background: linear-gradient( #002a2a, #016a6a);
+                }
+            }
+            &:first-child {
+                a {
+                    font-size: 0;
+                    padding: 0 10px;
+                    vertical-align: middle;
+                    &:before {
+                        @include ff('\f015', 1.5rem, #fff);
+                    }
+                }
+            }
+            &:last-child {
+                border-right: 1px solid #336666;
+            }
+        }
+    }
+    &_usermenu {
+        display: inline-block;
+        margin: 5px 0;
+        li {
+            display: inline-block;
+            line-height: 30px;
+            border-left: 1px solid #fff;
+            a,
+            span {
+                color: #fff;
+                padding: 0 20px;
+                line-height: normal;
+                cursor: pointer;
+            }
+            &:last-child {
+                border-right: 1px solid #fff;
+            }
+        }
+    }
+    @include breakpoint(max-width 1030px) {
+        &_navmenu {
+            margin-right: 0;
+            float: left;
+        }
+    }
+    @include breakpoint(max-width 860px) {
+        &_navmenu {
+            li {
+                padding: 5px;
+                a {
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+    @include breakpoint(max-width 768px) {
+        &_navmenu {
+            width: 100%;
+            display: block;
+            text-align: left;
+            padding-top: 46px;
+            float: none;
+            li {
+                display: block;
+                border-left: 0;
+                border-bottom: 1px solid #336666;
+                display: none;
+                &:last-child {
+                    border-right: 0;
+                }
+                &:first-child {
+                    a {
+                        font-size: 1em;
+                        cursor: pointer;
+                        display: inline-block;
+                        border-radius: 10px;
+                        padding: 10px 10px;
+                        color: #fff;
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        &_usermenu {
+            position: absolute;
+            right: 1rem;
+            top: 0;
+            z-index: 2;
+        }
+    }
+}

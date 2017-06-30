@@ -1,0 +1,28 @@
+.breadcrumbs {
+    margin: 1.5rem 0 1.5rem 4rem;
+    @include breakpoint(max-width 768px) {
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    &__menu {
+        li {
+            display: inline-block;
+            a {
+                color: #336666;
+                font-size: 1.125em;
+            }
+            p {
+                display: inline-block;
+                color: #000;
+                font-size: 1.125em;
+            }
+            &:after {
+                content: '/';
+                margin: 0 0.5rem;
+                font-size: 1.125em;
+            }
+            &:last-child:after {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.span {
+    &__darkgreen {
+        padding: 0.5rem 1rem;
+        background: #056c27;
+        display: inline-block;
+        border-radius: 10px;
+        color: #fff;
+    }
+    &__purple {
+        padding: 0.5rem 1rem;
+        background: #333399;
+        display: inline-block;
+        border-radius: 10px;
+        color: #fff;
+    }
+    &__cloud {
+        padding: 0.5rem 1rem;
+        background: #028a8a;
+        display: inline-block;
+        border-radius: 10px;
+        color: #fff;
+    }
+    &__green {
+        padding: 0.5rem 1rem;
+        background: #009933;
+        border-radius: 10px;
+        color: #fff;
+    }
+    &__lightgreen {
+        padding: 0.5rem 1rem;
+        background: #339900;
+        border-radius: 10px;
+        color: #fff;
+    }
+    &__darkyellow {
+        padding: 0.5rem 1rem;
+        background: #996600;
+        border-radius: 10px;
+        color: #fff;
+    }
+    &__lowyellow {
+        padding: 0.5rem 1rem;
+        background: #999900;
+        border-radius: 10px;
+        color: #fff;
+    }
+    &__blue {
+        padding: 5px 1rem;
+        background: #336699;
+        border-radius: 10px;
+        color: #fff;
+    }
+    &__lightgreen {
+        padding: 5px 1rem;
+        background: #339966;
+        border-radius: 10px;
+        color: #fff;
+    }
+    &__lowgreen {
+        padding: 5px 1rem;
+        background: #006600;
+        border-radius: 10px;
+        color: #fff;
+    }
+    &__red {
+        padding: 5px 1rem;
+        background: #993333;
+        border-radius: 10px;
+        color: #fff;
+    }
+}

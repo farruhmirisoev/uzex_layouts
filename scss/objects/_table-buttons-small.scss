@@ -1,0 +1,23 @@
+.p {
+    &__blue {
+        background: #006666;
+        color: #fff;
+        text-align: right;
+        padding: 3px 5px;
+        font-size: 14px;
+    }
+    &__green {
+        background: #006633;
+        color: #fff;
+        text-align: right;
+        padding: 3px 5px;
+        font-size: 14px;
+    }
+    &__purple {
+        background: #333399;
+        color: #fff;
+        text-align: right;
+        padding: 3px 5px;
+        font-size: 14px;
+    }
+}

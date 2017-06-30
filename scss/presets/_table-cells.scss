@@ -1,0 +1,26 @@
+tr:not(.head) {
+    box-shadow: 0px 0px 5px 0px rgba(112, 112, 112, 0.75);
+    td {
+        padding: 1rem;
+        background: #fff;
+        text-align: center;
+        position: relative;
+        color: #333333;
+        font-size: 1.125em;
+        vertical-align: middle;
+        &:after {
+            content: '';
+            border: solid 1px #ccc;
+            right: 0;
+            height: 80%;
+            position: absolute;
+            top: 10%;
+        }
+        &:last-child:after {
+            display: none;
+        }
+        &.tal {
+            text-align: left;
+        }
+    }
+}

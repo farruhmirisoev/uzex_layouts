@@ -1,0 +1,28 @@
+.registration {
+    &__form {
+        label {
+            color: #000;
+            font-size: 1.125em;
+            display: block;
+            margin: 0.5rem 0;
+        }
+        input[type="text"],
+        input[type="password"] {
+            font-size: 18px;
+            padding: 8px 10px;
+            box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+            border: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #000;
+            padding: 0.5rem 2rem;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.wshadow {
+    padding: 2rem 1.5rem;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(112, 112, 112, 0.75);
+    margin: 2rem 0;
+    @include breakpoint(max-width 600px) {
+        padding: 1rem;
+    }
+}

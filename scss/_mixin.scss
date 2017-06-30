@@ -1,0 +1,99 @@
+@mixin clearfix {
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+@mixin innerbox($marginLeftRight:0, $paddingLeftRight:0) {
+    max-width: container();
+    margin: 0 auto;
+    @if $marginLeftRight==1 {
+        $marginLeftRight: gutter(12);
+        margin-left: $marginLeftRight;
+        margin-right: $marginLeftRight;
+    }
+    @if $paddingLeftRight==1 {
+        $paddingLeftRight: gutter(12);
+        padding-left: $paddingLeftRight;
+        padding-right: $paddingLeftRight;
+    }
+    @include clearfix;
+}
+
+@mixin bg($size:cover) {
+    background-repeat: no-repeat;
+    background-size: $size;
+    background-position: center;
+    width: 100%;
+}
+
+@mixin ff($content, $font-size, $color) {
+    font-family: FontAwesome;
+    content: $content;
+    font-size: $font-size;
+    color: $color;
+    vertical-align: middle;
+}
+
+@mixin trans($time:0.4s) {
+    -webkit-transition: ease $time all;
+    -moz-transition: ease $time all;
+    -ms-transition: ease $time all;
+    -o-transition: ease $time all;
+    transition: ease $time all;
+}
+
+@mixin b($pixel, $type:max-width) {
+    @include breakpoint($type $pixel) {
+        @content;
+    }
+}
+
+@mixin cg {
+    &.views-row-odd,
+    &.views-row-even {
+        margin: 0;
+        float: none;
+        @content;
+    }
+}
+
+@mixin bold {
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Roboto Bold';
+}
+
+@mixin light {
+    font-family: 'Roboto Light';
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin lightit {
+    font-family: 'Roboto Light Italic';
+    font-weight: 300;
+    font-style: italic;
+}
+
+@mixin black {
+    font-family: 'Roboto Black';
+    font-weight: 900;
+    font-style: normal;
+}
+
+@mixin thin {
+    font-family: 'Roboto Thin';
+    font-weight: 100;
+    font-style: normal;
+}
+
+@mixin med {
+    font-family: 'Roboto Medium';
+    font-weight: 500;
+    font-style: normal;
+}
