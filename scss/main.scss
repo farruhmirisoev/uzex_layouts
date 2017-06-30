@@ -72,11 +72,12 @@ form input[type='submit'] {
             }
         }
     }
-    .login {
-        a {
-            border-left: 1px solid #404040;
-            padding: 7px 18px;
-        }
+   span {
+        border-left: 1px solid #404040;
+        padding: 7px 18px;
+                color: white;
+                font-size: 14px;
+                border-right: 1px solid #404040;
     }
     .register {
         margin-right: 0;
@@ -160,6 +161,10 @@ form input[type='submit'] {
                 font-size: 24px;
                 color: white;
                 padding: 10px 15px;
+                @include breakpoint (max-width 1024px) {
+                    font-size: 20px;
+                    padding: 0;
+                }
                 &:hover {
                     background: linear-gradient(to top, #006262, #002b2b);
                     border-radius: 10px;
@@ -182,6 +187,10 @@ form input[type='submit'] {
             font-size: 18px;
             color: #666666;
             margin-bottom: 35px;
+            @include breakpoint (max-width 1024px) {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
         }
         .our-products__type {
             @include gallery (4);
@@ -627,11 +636,11 @@ form input[type='submit'] {
                 .latest-news__image {
                     display: inline-block;
                     @include breakpoint (max-width 1024px) {
-                      display: block;
-                      text-align: center;
-                      img {
-                        display: inline;
-                      }
+                        display: block;
+                        text-align: center;
+                        img {
+                            display: inline;
+                        }
                     }
                 }
                 .latest-news__title {
@@ -643,7 +652,7 @@ form input[type='submit'] {
                         font-size: 18px;
                         color: #017979;
                         @include breakpoint (max-width 1024px) {
-                          width: auto;
+                            width: auto;
                         }
                     }
                     padding: 0.5em;
@@ -657,11 +666,10 @@ form input[type='submit'] {
                     padding: 1em 0;
                     padding-right: 2.5em;
                     color: #666666;
-                     @include breakpoint (max-width 1024px) {
-                      text-align: center;
-                     }
+                    @include breakpoint (max-width 1024px) {
+                        text-align: center;
+                    }
                 }
-
             }
             .latest-news__more {
                 text-align: right;
@@ -754,6 +762,7 @@ form input[type='submit'] {
     .slick-prev {
         opacity: 0.8;
         padding-bottom: 6rem;
+        z-index: 5;
     }
     .slick-next {
         right: 0rem !important;
