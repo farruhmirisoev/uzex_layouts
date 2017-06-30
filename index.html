@@ -5,14 +5,16 @@
     <title>home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/stacktable.css">
     <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
-    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="plugins/slick/slick.js"></script>
+    <script type="text/javascript" src="js/stacktable.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/main.ham.js"></script>
 </head>
@@ -22,9 +24,9 @@
     <header>
         <div id="header-top">
             <div class="user-actions">
-                <ul>
+                <ul class="header_usermenu">
                     <li>
-                        <span>Войти</span></li>
+                        <span class="loginbtn">Войти</span></li>
                     <li class="register"><a href="#">Регистрация</a></li>
                 </ul>
             </div>
@@ -41,6 +43,18 @@
             </form>
         </div>
     </div>
+    <div id="lang">
+        <div class="lang-button">
+            <span class="language"><i class="fa fa-globe" aria-hidden="true"></i></span>
+            <div class="langs">
+                <div>
+                    <a href="#"><img src="images/ru.png">Рус</a>
+                    <a href="#"><img src="images/uz.png">Узб</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="font">Aa</a>
+    </div>
     <div class="banner" style="background-image:url(images/banner.png)">
         <div class="banner__content">
             <div class="login-box">
@@ -53,7 +67,7 @@
                 </div>
             </div>
             <div class="intro-video">
-                <video controls="" poster="/images/poster.png">
+                <video controls="" poster="images/poster.png">
                     <source src="video/iv.mp4" type="video/webm"> Your browser does not support the video tag.
                 </video>
             </div>
@@ -161,54 +175,54 @@
                                 <div class="user-ratings rating__type_id-1">
                                     <div class="user-ratings__rate user-ratings__rate-1">
                                         <div class="user-ratings__star">5</div>
-                                        <div class="user-ratings__bar"></div>
+                                        <div class="user-ratings__bar" style="width: 260px;"></div>
                                         <div class="user-ratings__point">26</div>
                                     </div>
                                     <div class="user-ratings__rate user-ratings__rate-2">
                                         <div class="user-ratings__star">4</div>
-                                        <div class="user-ratings__bar"></div>
+                                        <div class="user-ratings__bar" style="width: 200px;"></div>
                                         <div class="user-ratings__point">20</div>
                                     </div>
                                     <div class="user-ratings__rate user-ratings__rate-3">
                                         <div class="user-ratings__star">3</div>
-                                        <div class="user-ratings__bar"></div>
+                                        <div class="user-ratings__bar" style="width: 150px;"></div>
                                         <div class="user-ratings__point">15</div>
                                     </div>
                                     <div class="user-ratings__rate user-ratings__rate-4">
                                         <div class="user-ratings__star">2</div>
-                                        <div class="user-ratings__bar"></div>
+                                        <div class="user-ratings__bar" style="width: 50px;"></div>
                                         <div class="user-ratings__point">5</div>
                                     </div>
                                     <div class="user-ratings__rate user-ratings__rate-5">
                                         <div class="user-ratings__star">1</div>
-                                        <div class="user-ratings__bar"></div>
+                                        <div class="user-ratings__bar" style="width: 20px;"></div>
                                         <div class="user-ratings__point">2</div>
                                     </div>
                                 </div>
                                 <div class="user-ratings rating__type_id-2">
                                     <div class="user-ratings__rate user-ratings__rate-2">
                                         <div class="user-ratings__star">5</div>
-                                        <div class="user-ratings__bar"></div>
+                                        <div class="user-ratings__bar" style="width: 20px;"></div>
                                         <div class="user-ratings__point">2</div>
                                     </div>
                                     <div class="user-ratings__rate user-ratings__rate-3">
                                         <div class="user-ratings__star">4</div>
-                                        <div class="user-ratings__bar"></div>
+                                        <div class="user-ratings__bar" style="width: 200px;"></div>
                                         <div class="user-ratings__point">20</div>
                                     </div>
                                     <div class="user-ratings__rate user-ratings__rate-4">
                                         <div class="user-ratings__star">3</div>
-                                        <div class="user-ratings__bar"></div>
+                                        <div class="user-ratings__bar" style="width: 150px;"></div>
                                         <div class="user-ratings__point">15</div>
                                     </div>
                                     <div class="user-ratings__rate user-ratings__rate-5">
                                         <div class="user-ratings__star">2</div>
-                                        <div class="user-ratings__bar"></div>
+                                        <div class="user-ratings__bar" style="width: 50px;"></div>
                                         <div class="user-ratings__point">5</div>
                                     </div>
                                     <div class="user-ratings__rate user-ratings__rate-1">
                                         <div class="user-ratings__star">1</div>
-                                        <div class="user-ratings__bar"></div>
+                                        <div class="user-ratings__bar" style="width: 260px;"></div>
                                         <div class="user-ratings__point">26</div>
                                     </div>
                                 </div>
@@ -477,8 +491,7 @@
                     <li>
                         <a href="#">Биржевая платформа</a>
                     </li>
-                    <li>
-                        <a href="#">Электронаая коммерция</a>
+                    <li><a href="#">Электронаая коммерция</a>
                     </li>
                     <li>
                         <a href="#">Гос. закупки</a>
@@ -506,7 +519,7 @@
                         Телефон:
                     </p>
                     <span>
-                    + (998 90) 900 90 90 
+                    + (998 90) 900 90 90
                     <br>
                     + (998 71) 200 20 20
                     </span>
