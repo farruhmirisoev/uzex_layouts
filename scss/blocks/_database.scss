@@ -59,5 +59,22 @@
                 }
             }
         }
+        @include breakpoint(max-width 1024px) {
+            .head {
+                display: none;
+            }
+            .st-head-row {
+                background: linear-gradient(#303030, #212121);
+                color: #fff;
+                padding: 1rem;
+                font-size: 1.175em;
+            }
+        }
+        @include breakpoint(max-width 768px) {
+            tr:not(.head) td {
+                padding: 0.5rem;
+                text-align: left;
+            }
+        }
     }
 }

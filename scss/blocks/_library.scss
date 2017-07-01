@@ -30,6 +30,51 @@
             @include gallery(2.4);
             padding: 0.5rem;
             position: relative;
+            @include breakpoint(max-width 1024px) {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                    @include gallery(4);
+                }
+                &:nth-child(4),
+                &:nth-child(5) {
+                    margin: 0;
+                    float: none;
+                    @include span(4);
+                }
+                &:nth-child(4) {
+                    @include push(2);
+                    clear: left;
+                }
+                margin-bottom: 1rem;
+            }
+            @include breakpoint(max-width 650px) {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    @include gallery(6);
+                }
+                &:nth-child(5) {
+                    margin: 0;
+                    float: none;
+                    @include span(6);
+                    @include push(3);
+                    clear: both;
+                }
+            }
+            @include breakpoint(max-width 450px) {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    margin: 0 !important;
+                    float: none;
+                    @include span(full);
+                    clear: both;
+                }
+            }
             img {
                 width: 100%;
                 height: auto;
@@ -132,6 +177,23 @@
                         position: absolute;
                         top: 15%;
                     }
+                }
+            }
+            @include breakpoint(max-width 1024px) {
+                .head {
+                    display: none;
+                }
+                .st-head-row {
+                    background: #ebebeb;
+                    color: #666666;
+                    padding: 1rem;
+                    font-size: 1.175em;
+                }
+            }
+            @include breakpoint(max-width 768px) {
+                tr:not(.head) td {
+                    padding: 0.5rem;
+                    text-align: left;
                 }
             }
         }

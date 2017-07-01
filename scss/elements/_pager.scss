@@ -18,7 +18,7 @@
                 pointer-events: none;
             }
         }
-        & .prev {
+        &.prev {
             margin-right: 3rem;
             a,
             span {
@@ -30,7 +30,7 @@
                 }
             }
         }
-        & .next {
+        &.next {
             margin-left: 3rem;
             a,
             span {
@@ -44,19 +44,19 @@
         }
         @include breakpoint(max-width 1024px) {
             margin: 0 1rem;
-            & .prev {
+            &.prev {
                 margin-right: 1rem;
             }
-            & .next {
+            &.next {
                 margin-left: 1rem;
             }
         }
         @include breakpoint(max-width 768px) {
             margin: 0 0.5rem;
-            & .prev {
+            &.prev {
                 margin-right: 0.5rem;
             }
-            & .next {
+            &.next {
                 margin-left: 0.5rem;
             }
             a {
@@ -64,13 +64,13 @@
             }
         }
         @include breakpoint(max-width 650px) {
-            & .prev {
+            &.prev {
                 span,
                 a {
                     font-size: 0;
                 }
             }
-            & .next {
+            &.next {
                 span,
                 a {
                     font-size: 0;

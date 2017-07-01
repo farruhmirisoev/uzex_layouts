@@ -42,7 +42,8 @@
             $('.header_navmenu').find('li').slideToggle();
         });
         $('.reestr').stacktable();
-        
+        $('.library__table__list').stacktable();
+        $('.database__table').stacktable();
     }); //doc ready end--------------------------------
 
 }(jQuery));
